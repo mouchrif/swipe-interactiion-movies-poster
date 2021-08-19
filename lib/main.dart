@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_poster/constants.dart';
 import 'package:movie_poster/screens/display_posters.dart';
+import 'package:movie_poster/screens/movie_details.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,6 +28,9 @@ class MyApp extends StatelessWidget {
         accentColor: kSecondaryColor,
       ),
       home: MyHomePage(),
+      routes: {
+        MovieDetails.routeName: (ctx) => MovieDetails(),
+      },
     );
   }
 }
